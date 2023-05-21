@@ -1,0 +1,289 @@
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+}
+
+#password-strength {
+  margin-top: 10px;
+}
+
+.strong {
+  color: rgb(0, 255, 0);
+}
+
+.weak {
+  color: red;
+}
+
+#leaderboard {
+  margin-top: 20px;
+}
+
+#leaderboard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#leaderboard th, #leaderboard td {
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+body{
+  margin: 0;
+  background: #201b2c;
+}
+
+.inicio{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.titulo h1{
+  font-size: 3vw;
+  color: #77ffcD;
+}
+.info{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-login{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: #2f2841;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px #00000056;
+}
+
+.card-login h1{
+  color: #00ff88;
+  font-weight: 800;
+  margin: 0;
+}
+
+.textfield{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.textfield input{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #514869;
+  color: #f0ffffde;
+  font-size: 12pt;
+  box-sizing: 0 10px 40px #00000056;
+  outline: none;
+  box-sizing: border-box;
+}
+.textfield label{
+  color: #f0ffffde;
+  margin-bottom: 10px;
+}
+
+.textfield input::placeholder{
+  color: #a8a8a8de;
+}
+.btn-verificar{
+  width: 100%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2b134b;
+  background-color: #00ff88;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #00ff8052;
+  transition: transform .4s;
+}
+.btn-verificar:hover{
+  transform: scale(1.1);
+}
+.image{
+  width: 35vw;
+}
+
+@media only screen and (max-width: 950px){
+  .card-login{
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .inicio{
+    flex-direction: column;
+  }
+  
+  .titulo > h1{
+    display: none;
+  }
+  
+  .titulo{
+    width: 100%;
+    height: auto;
+  }
+  
+  .info{
+    width: 100%;
+    height: auto;
+  }
+  
+  .image{
+    width: 50vw;
+  }
+
+  .card-login{
+    width: 90%;
+  }
+}
+
+#leaderboard {
+  margin-top: 20px;
+}
+
+#leaderboard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#leaderboard th, #leaderboard td {
+  padding: 10px;
+  text-align: center;
+}
+
+#leaderboard th {
+  background-color: #2f2841;
+  color: #fff;
+}
+
+#leaderboard td {
+  background-color: #514869;
+  color: #f0ffffde;
+}
+
+#leaderboard tr:nth-child(even) td {
+  background-color: #2f2841;
+}
+
+#leaderboard tr:hover td {
+  background-color: #3a3249;
+}
+
+#reset-button{
+  display: none;
+  width: 100%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2b134b;
+  background-color: #00ff88;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #00ff8052;
+  transition: transform .4s;
+}
+
+@media only screen and (max-width: 600px) {
+  #leaderboard table {
+    display: block;
+  }
+
+  #leaderboard th,
+  #leaderboard td {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  #leaderboard td {
+    border-top: 1px solid #ddd;
+  }
+
+  #leaderboard td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  #leaderboard th:last-child,
+  #leaderboard td:last-child {
+    border-bottom: none;
+  }
+}
+
+.lista{
+  color: white;
+}
+.btn-leaderboard{
+  width: 100px;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2b134b;
+  background-color: #00ff88;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #00ff8052;
+  transition: transform .4s;
+}
+.btn-voltar{
+  width: 100px;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2b134b;
+  background-color: #00ff88;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #00ff8052;
+  transition: transform .4s;
+}
