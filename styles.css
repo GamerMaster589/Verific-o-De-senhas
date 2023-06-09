@@ -25,6 +25,7 @@ input[type="submit"] {
 
 #leaderboard {
   margin-top: 20px;
+  text-align: center;
 }
 
 #leaderboard table {
@@ -32,24 +33,26 @@ input[type="submit"] {
   border-collapse: collapse;
 }
 
-#leaderboard th, #leaderboard td {
+#leaderboard th,
+#leaderboard td {
   padding: 5px;
   border: 1px solid #ddd;
 }
 
-body{
+body {
   margin: 0;
   background: #201b2c;
 }
 
-.inicio{
+.inicio {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.titulo{
+
+.titulo {
   width: 50vw;
   height: 100vh;
   display: flex;
@@ -57,18 +60,21 @@ body{
   align-items: center;
   flex-direction: column;
 }
-.titulo h1{
+
+.titulo h1 {
   font-size: 3vw;
   color: #77ffcD;
 }
-.info{
+
+.info {
   width: 50vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card-login{
+
+.card-login {
   width: 60%;
   display: flex;
   justify-content: center;
@@ -80,13 +86,13 @@ body{
   box-shadow: 0 10px 40px #00000056;
 }
 
-.card-login h1{
+.card-login h1 {
   color: #00ff88;
   font-weight: 800;
   margin: 0;
 }
 
-.textfield{
+.textfield {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -95,7 +101,7 @@ body{
   margin: 10px 0;
 }
 
-.textfield input{
+.textfield input {
   width: 100%;
   border: none;
   border-radius: 10px;
@@ -107,15 +113,17 @@ body{
   outline: none;
   box-sizing: border-box;
 }
-.textfield label{
+
+.textfield label {
   color: #f0ffffde;
   margin-bottom: 10px;
 }
 
-.textfield input::placeholder{
+.textfield input::placeholder {
   color: #a8a8a8de;
 }
-.btn-verificar{
+
+.btn-verificar {
   width: 100%;
   padding: 16px 0px;
   margin: 25px;
@@ -131,49 +139,18 @@ body{
   box-shadow: 0px 10px 40px -12px #00ff8052;
   transition: transform .4s;
 }
-.btn-verificar:hover{
+
+.btn-verificar:hover {
   transform: scale(1.1);
 }
-.image{
+
+.image {
   width: 35vw;
-}
-
-@media only screen and (max-width: 950px){
-  .card-login{
-    width: 85%;
-  }
-}
-
-@media only screen and (max-width: 600px){
-  .inicio{
-    flex-direction: column;
-  }
-  
-  .titulo > h1{
-    display: none;
-  }
-  
-  .titulo{
-    width: 100%;
-    height: auto;
-  }
-  
-  .info{
-    width: 100%;
-    height: auto;
-  }
-  
-  .image{
-    width: 50vw;
-  }
-
-  .card-login{
-    width: 90%;
-  }
 }
 
 #leaderboard {
   margin-top: 20px;
+  text-align: center;
 }
 
 #leaderboard table {
@@ -181,7 +158,8 @@ body{
   border-collapse: collapse;
 }
 
-#leaderboard th, #leaderboard td {
+#leaderboard th,
+#leaderboard td {
   padding: 10px;
   text-align: center;
 }
@@ -204,7 +182,7 @@ body{
   background-color: #3a3249;
 }
 
-#reset-button{
+#reset-button {
   display: none;
   width: 100%;
   padding: 16px 0px;
@@ -252,10 +230,11 @@ body{
   }
 }
 
-.lista{
+.lista {
   color: white;
 }
-.btn-leaderboard{
+
+.btn-leaderboard {
   width: 100px;
   padding: 16px 0px;
   margin: 25px;
@@ -271,7 +250,8 @@ body{
   box-shadow: 0px 10px 40px -12px #00ff8052;
   transition: transform .4s;
 }
-.btn-voltar{
+
+.btn-voltar {
   width: 100px;
   padding: 16px 0px;
   margin: 25px;
@@ -286,4 +266,78 @@ body{
   cursor: pointer;
   box-shadow: 0px 10px 40px -12px #00ff8052;
   transition: transform .4s;
+}
+
+@media only screen and (max-width: 600px) {
+  .inicio {
+    flex-direction: column;
+  }
+
+  .titulo > h1 {
+    font-size: 1vw;
+  }
+
+  .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  .info {
+    width: 100%;
+    height: auto;
+  }
+
+  .image {
+    width: 50vw;
+  }
+
+  .card-login {
+    width: 90%;
+  }
+
+  .btn-leaderboard {
+    width: 150px;
+    margin: 15px;
+  }
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .titulo h1 {
+    font-size: 5vw;
+    display: flex;
+  }
+
+  .image {
+    width: 30vw;
+  }
+
+  .info {
+    width: auto;
+    margin: 0 20px;
+    max-width: 400px;
+    padding: 20px;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    background-color: #2f2841;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-login {
+    width: 100%;
+  }
+
+  .btn-verificar,
+  .btn-leaderboard {
+    width: 100%;
+    margin: 10px 0;
+    margin-bottom: 0;
+  }
 }
